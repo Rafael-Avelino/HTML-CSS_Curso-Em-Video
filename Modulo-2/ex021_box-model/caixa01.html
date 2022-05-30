@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de caixas</title>
+    <style>
+        h1#exemplo {
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-color: #4E4B5C;
+            border-style: solid;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            outline-width: 5px; /*outline está dentro da margin*/
+            outline-style: dashed;
+            outline-color: #0D0221;
+        }
+
+        a{
+            border-width: 10px;
+            border-color: red;
+            border-style: double;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="exemplo">Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links
+    são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+
+    <p>Para melhor visualização, utilizar o dev tools do chrome</p>
+    <p>Nele é possível alterar as propriedades dos elementos sem que haja alteração
+    do documento original</p>
+
+    <h1>Anotações</h1>
+
+    <h2>Simplificando os comandos já vistos</h2>
+
+    <h3>Border</h3>
+
+    <p>Antes:</p>
+    <pre>
+        <code>
+    border-width: 10px;
+    border-style: solid;
+    border-color: #4E4B5C;
+    </code>
+    </pre>
+    <p>Depois:</p>
+    <pre>
+        <code>
+    border: 10px solid #4E4B5C;
+    </code>
+    </pre>
+
+    <h3>Padding</h3>
+
+    <p>Antes:</p>
+    <pre>
+        <code>
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+        </code>
+    </pre>
+
+    <p>Depois:</p>
+
+    <pre>
+    <code>
+    padding: 10px 10px 10px 10px;
+    </code>
+    </pre>
+
+    <p>Obs.: se todos os tamanhos forem iguais, basta informar uma vez só:</p>
+    <code>padding: 10px;</code>
+
+    <h3>Margin</h3>
+
+    <p>Antes:</p>
+    <pre>
+        <code>
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+        </code>
+    </pre>
+
+    <p>Depois:</p>
+
+    <pre>
+    <code>
+    margin: 10px 10px 10px 10px;
+    </code>
+    </pre>
+
+    <p>Margin também pode ser configurada utilizando o valor "auto". Esse valor
+    ajusta automaticamente a margin de acordo com o tamanho da viewport</p>
+
+    <h3>Outline</h3>
+
+    <p>Antes:</p>
+
+    <pre>
+        <code>
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: #0D0221;
+        </code>
+    </pre>
+
+    <p>Depois:</p>
+    <pre>
+        <code>
+    outline: 5px dashed #0D0221;
+        </code>
+    </pre>
+
+
+</body>
+</html>

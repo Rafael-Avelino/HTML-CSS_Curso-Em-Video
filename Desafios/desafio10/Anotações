@@ -1,0 +1,30 @@
+*Usar variáveis em css:
+
+:root{
+    --color: red;
+    --font-principal: Arial, Verdana, sans serif;
+
+}
+
+
+*Responsividade para sites:
+
+-Ao invés de utilizar width, utilizar min-width e max-width
+
+main{
+    min-width: 320px;
+    max-width: 800px;
+}
+
+img{
+    width: 100%;
+    }
+
+
+- Criando responsividade para imagem:
+
+<picture>
+    <source media="(max-width: )" srcset="" type=""> // quando chegar em max-width a imagem vai ser trocada
+    <img src="" alt="">
+</picture>
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: arial, helvetica, sans-serif;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{   /* links visitados ficarão azul escuro */
+            color:darkblue;
+        }
+
+        a:hover{ /* quando o mouse estiver em cima do link, ele ficará sublinhado */
+            text-decoration: underline;
+            color: black;
+        }
+
+        .especial{
+            background-color: coral;
+        }
+
+        .especial::before{
+            content: "=> ";
+        }
+        .especial::after{ /*Pseudo elemento "::", adiciona um pseudo elemento depois do elemento escolhido */
+            content: " <=";
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial">Canal Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Vídeo</a></li>
+    </ul>
+
+    <h1>Anotações</h1>
+
+    <p>As pseudo-classes são representadas por ":"</p>
+    <p>Pseudo-classes utilizadas:</p>
+    <ul>
+        <li>hover</li>
+        <li>visited</li>
+        <li>active</li>
+    </ul>
+
+    <p>Os pseudo-elementos são representados por "::"</p>
+    <p>Pseudo-elementos utilizados:</p>
+    <ul>
+        <li>after - adiciona um pseudo elemento depois do element escolhido</li>
+        <li>before - adiciona um pseudo elemento antes do element escolhido</li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+    font-family: Arial;
+    /*height: 100%;*/
+}
+
+body{
+    background-image: linear-gradient(to right, #925E78, #BD93BD);
+}
+
+main {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px; /* retirando as pontas de main */
+    box-shadow: 5px 5px 14px #23022E; /* deslocamento lateral, deslocamento pra baixo, espalhamento e cor */
+    width: 600px; /* largura de main */
+    padding: 10px ; /* acolchoamento */
+    margin: auto; /* centraliza independente do tamanho da página */
+}
+
+h1{
+    text-align: center;
+    color: #2A2B2A;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2{
+    text-shadow: 1px 1px 2px black;
+    color: #2A2B2A;
+}
+
+p{
+    text-align: justify;
+
+}

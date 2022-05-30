@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+
+    <h2>Código-fonte e Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code>  é escrito em linguagem JavaScript. Aqui, o
+    código foi envelopado com a tag &lt;code&gt;, a qual cria uma fonte mono-espaçada.</p>
+    <p>
+        O &lt;code&gt não organiza o código com identação. Exemplo: <br>
+
+
+        <code>
+            let n = window.document.querySeclector("input#ntxt")
+            let num = Number(n.value)
+
+            if (num === 0){
+                window.alert("Zero")
+            } else {
+                window.alert("Diferente de zero")
+            }
+        </code>
+
+    </p>
+
+    <p>
+        Para resolver isso, é só adicionar a tag &lt;pre&gt;:
+
+    <pre>
+        <code>
+    let n = window.document.querySeclector("input#ntxt")
+    let num = Number(n.value)
+
+    if (num === 0){
+        window.alert("Zero")
+    } else {
+        window.alert("Diferente de zero")
+    }
+        </code>
+
+    </pre>
+
+    </p>
+
+    <h2>Citações</h2>
+    <p>Já dizia o ditado: <q>Quem avisa amigo é. </q>
+        Aqui. As aspas foram colocadas com a tag &lt;q&gt;.</p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo Patrick Rothfuss, autor de O Nome do Vento:</p>
+    <blockquote cite="https://www.pensador.com/autor/patrick_rothfuss/">
+        Metade de parecer inteligente tem a ver com ficar de boca fechada nas horas certas.</blockquote>
+
+    <p>Aqui, a tag usada para criar uma citação completa foi &lt;blockquote&gt;.</p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. </p>
+</body>
+</html>

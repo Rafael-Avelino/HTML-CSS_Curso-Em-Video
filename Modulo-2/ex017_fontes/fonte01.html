@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font: italic bolder 1em sans-serif; /*shorthand font*/
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Trabalhando com fontes</h1>
+
+
+    <h2>Tamanho de fonte</h2>
+
+    <p>Existem diferentes tipos de medidas para fontes, elas são divididas
+        entre medidas absolutas e medidas relativas:</p>
+
+    <h3>Medidas absolutas</h3>
+    <p>
+    <ul>
+        <li>cm - centímetros</li>
+        <li>mm - milímetros</li>
+        <li>in - polegadas</li>
+        <li>pt - ponto</li>
+        <li>pc - paica</li>
+    </ul>
+    </p>
+
+    <h3>Medidas relativas</h3>
+    <p>
+    <ul>
+        <li>em - relativa ao tamanho atual da fonte</li>
+        <li>ex - relativa a altura x da fonte</li>
+        <li>rem - tamanho de fonte do elemento-raiz do documento</li>
+        <li>vh - altura da viewport</li>
+        <li>vw - largura da viewport (tamanho de tela)</li>
+        <li>% - porcentagem</li>
+    </ul>
+    </p>
+
+    <p>Por recomendação da W3C, usar "px" ou "em". Geralmente 16px = 1em </p>
+
+    <p>Neste documento a fonte está considerada da seguinte forma:</p>
+
+    <p>
+    <pre>
+    <code>
+    &lt;style>
+        body{
+            font-family: arial, helvetica, sans-serif;
+            font-size: 1em;
+            }
+    &lt;/style>
+    </code>
+    </pre>
+    </p>
+
+    <h2>Peso, estilo e shorthand</h2>
+
+    <ul>
+        <li>font-weight: normal;</li>
+        <li>font-style: italic</li>
+        <li>text-decoration: underline</li>
+
+
+    </ul>
+
+    <h3>Shorthand</h3>
+    <p>Essa opção condensa as principais configurações de fonte
+    seguindo essa ordem:</p>
+
+    <p>font-style -> font-weight -> fontsize -> font-family</p>
+</body>
+</html>

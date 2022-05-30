@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mídias em HTML5</title>
+    <style>
+        body{
+            background-color: lightsteelblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes
+    ou simplesmente aumente e diminua o tamanho de seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    </picture>
+
+    <p>Neste exercício foi criada uma imagem dinâmica.
+        As imagens foram colocadas dentro da tag &lt;picture&gt; e dentro dela foi
+    colocada a imagem grande. </p>
+    <p>Para criar a dinâmica de tamanho foi colocada ainda dentro da tag
+        &lt;picture&gt; a tag &lt;source&gt;. Dentro dessa tag é necessário colocar
+        o tamanho máximo do navegador em pixels, a imagem desejada e o tipo da imagem.</p>
+
+    <pre>
+        <code>
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px )" srcset="imagens/imagem-p.png" type="image/png">
+        &lt;source media="(max-width: 1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        &lt;img src="imagens/imagem-g.png" alt="Imagem flexível">
+    &lt;/picture>
+        </code>
+    </pre>
+
+    <p>A lógica envolvida para o código acima é a seguinte: se o navegador
+    tiver menos que 750 pixels, carregue esta imagem.</p>
+    
+    <h1>Adicionando áudio</h1>
+    <p>Aqui adicionaremos um audio através de HTML5:</p>
+    <audio src="midia/MerryGo_SilentFilmLight_KevinMacLeod.mp3" controls></audio>
+
+    <p>A tag utilizada para adicionar áudio foi &lt;audio&gt;; dentro de "src"
+        coloca-se o caminho do arquivo. Depois é necessário adicionar o parâmetro
+    "controls" que mostra o player do áudio.</p>
+
+    <code>&lt;audio src="midia/MerryGo_SilentFilmLight_KevinMacLeod.mp3" controls>&lt;/audio&gt;</code>
+    <p>Da forma indicada acima o audio pode não ter compatibilidade com alguns navegadores.
+    Para corrigir isso, adicione outras extensões de mídia:</p>
+
+    <audio preload="metadata" controls>
+        <source src="midia/MerryGo_SilentFilmLight_KevinMacLeod.mp3" type="audio/mpeg">
+        <source src="midia/MerryGo_SilentFilmLight_KevinMacLeod.ogg" type="audio/ogg">
+        <source src="midia/MerryGo_SilentFilmLight_KevinMacLeod.wav" type="audio/wav">
+    </audio>
+
+    <pre>
+        <code>
+    &lt;audio preload="metadata" controls&gt;
+    &lt;source src="midia/MerryGo_SilentFilmLight_KevinMacLeod.mp3" type="audio/mpeg"&gt;
+    &lt;source src="midia/MerryGo_SilentFilmLight_KevinMacLeod.ogg" type="audio/ogg"&gt;
+    &lt;source src="midia/MerryGo_SilentFilmLight_KevinMacLeod.wav" type="audio/wav"&gt;
+    &lt;/audio&gt;
+        </code>
+    </pre>
+
+    <p>O parâmetro "preload" indica o que acontecerá com o áudio quando o 
+    site for carregado. Esse parâmetro apresenta três opções:</p>
+    <ul>
+        <li><strong>none </strong>- Indica que o áudio não deve ser pré carregado.</li>
+        <li><strong>metadata </strong>- Indica que apenas os meta dados do áudio serão carregados</li>
+        <li><strong>auto </strong>- Indica que o áudio pode ser carregado junto com a página.</li>
+    </ul>
+
+    <p>Caso não seja indicado um "preload", o navegador entende como a opção <strong>"auto"</strong></p>
+
+    <h1>Adicionando vídeos</h1>
+
+    <video muted controls >
+        <source src="midia/cachoeira_chapada-veadeiros.mp4" type="video/mp4">
+        Seu navegador não suporta esse tipo de vídeo, mas não se preocupe, você
+        pode <a href="midia/cachoeira_chapada-veadeiros.mp4" download="cachoeira_chapada-veadeiros.mp4">baixar ele aqui</a>
+        e assistir em seu reprodutor de vídeo favorito.
+    </video>
+
+    <p> Este vídeo foi adicionado da seguinte forma:</p>
+
+    <pre>
+        <code>
+    &lt;video muted controls >
+        &lt;source src="midia/cachoeira_chapada-veadeiros.mp4" type="video/mp4">
+        Seu navegador não suporta esse tipo de vídeo, mas não se preocupe, você
+        pode &lt;a href="midia/cachoeira_chapada-veadeiros.mp4" download="cachoeira_chapada-veadeiros.mp4">baixar ele aqui&lt;/a&gt;
+        e assistir em seu reprodutor de vídeo favorito.
+    &lt;/video>
+        </code>
+    </pre>
+
+    <p>O parâmetro "muted" deixa o vídeo mudo por padrão, o cliente poderá
+    desmutar o vídeo se quiser. Já o parâmetro controls torna visível os controles
+    do vídeo (botão play/pause, mute, tela cheia e opções)</p>
+
+
+
+    <h1>Adicionando vídeos do YouTube</h1>
+
+    <p>Ao clicar em "compartilhar" em qualquer vídeo do YouTube, ele mesmo te dá
+    a opção de copiar um código em HTML5 para inserir o vídeo em seu código.</p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vDHcNU9t4xE"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>O código do YouTube vem inserido na tag &lt;iframe&gt; que é usado para embutir um
+    código HTML de outra página na página atual</p>
+</body>
+</html>
+
