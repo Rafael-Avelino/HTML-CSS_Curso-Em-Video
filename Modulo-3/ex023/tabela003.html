@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 03</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela 03 - Mesclagem de células</h1>
+
+    <!-- Hierarquia de tabelas
+        table
+            head
+                row, data
+            body
+                row, data
+            footer
+                row, data -->
+
+
+    <table>
+        <tr>
+            <td rowspan="2">a</td>
+            <td colspan="2">b</td> <!--  Expandindo a célula "b" para ocupar duas colunas -->
+            <!-- <td>c</td> -->
+        </tr>
+
+        <tr>
+            <!-- <td>d</td> -->
+            <td>e</td>
+            <td>f</td>
+        </tr>
+
+        <tr>
+            <td>g</td>
+            <td>h</td>
+            <td rowspan="2">i</td> <!--  Expandindo a célula "i" para ocupar duas linhas -->
+        </tr>
+
+        <tr>
+            <td colspan="2">j</td>
+            <!-- <td>k</td> -->
+            <!-- <td>l</td> -->
+        </tr>
+    </table>
+</body>     
+</html>
