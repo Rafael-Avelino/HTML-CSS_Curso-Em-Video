@@ -58,10 +58,10 @@ main{
     font-family: 'Sriracha', cursive;
     font-size:3.5vw;
 
-    padding: 70px 340px 50px 30px;
+    padding: 50px;
 
     background-image: url('imagens/background001.jpg');
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -70,7 +70,9 @@ main{
 #p2,#p5{
     background-color: rgba(0, 0, 0, 0.26);
     color: #fff;
+    text-shadow: 1px 1px black;
     padding: 5px 5px;
+    display: inline-block;
 }
 
 
@@ -78,7 +80,7 @@ main{
     font-family: 'Sriracha', cursive;
     font-size:3.5vw;
 
-    padding: 70px 340px 50px 30px;
+    padding: 50px;
 
     background-image: url('imagens/background002.jpg');
     background-position: center;
